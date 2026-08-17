@@ -7,6 +7,7 @@ This repository documents my daily PHP learning journey, including practice exer
 | Date       | Topic                                                  |
 | :--------- | :------------------------------------------------------|
 | 2026-08-16 | Variables and Data Types                               |
+| 2026-08-17 | Operators in PHP                                       |
 
 ---
 
