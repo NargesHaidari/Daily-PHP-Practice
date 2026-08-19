@@ -1,36 +1,42 @@
 <?php
 
-$score = 75;
+// 1. for
+echo "for:<br>";
 
-if ($score >= 90) {
-    echo "Excellent";
-} elseif ($score >= 60) {
-    echo "Pass";
-} else {
-    echo "Fail";
+for ($i = 1; $i <= 5; $i++) {
+    echo $i . "<br>";
 }
 
-echo "<br><br>";
 
-$age = 20;
-$result = ($age >= 18) ? "Adult" : "Minor";
-echo $result;
+// 2. while
+echo "<br>while:<br>";
 
-echo "<br><br>";
+$i = 1;
 
-$day = 2;
+while ($i <= 5) {
+    echo $i . "<br>";
+    $i++;
+}
 
-switch ($day) {
-    case 1:
-        echo "Saturday";
-        break;
 
-    case 2:
-        echo "Sunday";
-        break;
+// 3. do...while
+echo "<br>do...while:<br>";
 
-    default:
-        echo "Unknown day";
+$i = 1;
+
+do {
+    echo $i . "<br>";
+    $i++;
+} while ($i <= 5);
+
+
+// 4. foreach
+echo "<br>foreach:<br>";
+
+$names = ["Ali", "Sara", "Reza"];
+
+foreach ($names as $name) {
+    echo $name . "<br>";
 }
 
 ?>

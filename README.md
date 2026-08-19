@@ -9,6 +9,7 @@ This repository documents my daily PHP learning journey, including practice exer
 | 2026-08-16 | Variables and Data Types                               |
 | 2026-08-17 | Operators in PHP                                       |
 | 2026-08-18 | Conditions in PHP                                      |
+| 2026-08-19 | Loops in PHP                                           |
 
 ---
 
