@@ -12,6 +12,7 @@ This repository documents my daily PHP learning journey, including practice exer
 | 2026-08-19 | Loops in PHP                                           |
 | 2026-08-20 | Functions and Arrays                                   |
 | 2026-08-21 | String Functions in PHP                                |
+| 2026-08-22 | Array Functions in PHP                                 |
 
 ---
 

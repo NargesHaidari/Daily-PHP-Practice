@@ -1,43 +1,45 @@
+
 <?php
 
-$text = "Hello World";
+$fruits = ["Apple", "Banana", "Orange", "Mango"];
 
-echo strlen($text);
-echo "<br><br>";
+echo count($fruits);
+echo "<br>";
 
-echo strtolower($text);
-echo "<br><br>";
+echo in_array("Banana", $fruits) ? "Yes" : "No";
+echo "<br>";
 
-echo strtoupper($text);
-echo "<br><br>";
+array_push($fruits, "Grapes");
+print_r($fruits);
+echo "<br>";
 
-echo str_replace("World", "PHP", $text);
-echo "<br><br>";
+array_pop($fruits);
+print_r($fruits);
+echo "<br>";
 
-echo substr($text, 0, 5);
-echo "<br><br>";
+sort($fruits);
+print_r($fruits);
+echo "<br>";
 
-echo strpos($text, "World");
-echo "<br><br>";
+rsort($fruits);
+print_r($fruits);
+echo "<br>";
 
-echo trim("   Hello   ");
-echo "<br><br>";
+$numbers = [10, 20, 30, 40];
 
-echo ucfirst("hello");
-echo "<br><br>";
+echo array_sum($numbers);
+echo "<br>";
 
-echo ucwords("hello world");
-echo "<br><br>";
+echo array_search(30, $numbers);
+echo "<br>";
 
-echo str_repeat("Hi ", 3);
-echo "<br><br>";
+$newFruits = array_slice($fruits, 1, 2);
+print_r($newFruits);
+echo "<br>";
 
-echo str_contains($text, "World") ? "Yes" : "No";
-echo "<br><br>";
+$moreFruits = ["Peach", "Watermelon"];
 
-echo str_starts_with($text, "Hello") ? "Yes" : "No";
-echo "<br><br>";
-
-echo str_ends_with($text, "World") ? "Yes" : "No";
+$allFruits = array_merge($fruits, $moreFruits);
+print_r($allFruits);
 
 ?>
