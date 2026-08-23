@@ -1,45 +1,71 @@
 
+
 <?php
 
-$fruits = ["Apple", "Banana", "Orange", "Mango"];
+// Scope in PHP
 
-echo count($fruits);
+$x = 10;
+
+function test() {
+    $y = 20;
+    static $z = 0;
+
+    $z++;
+
+    echo $y;
+    echo $z;
+}
+
+test();
+test();
+
+echo $x;
+
+
+// Type declarations
+
+function add(int $a, int $b): int {
+    return $a + $b;
+}
+
+function greet(string $name): string {
+    return "Hello " . $name;
+}
+
+function isAdult(int $age): bool {
+    return $age >= 18;
+}
+
+function getNumbers(): array {
+    return [1, 2, 3];
+}
+
+class User {
+    public string $name;
+    public int $age;
+
+    public function __construct(string $name, int $age) {
+        $this->name = $name;
+        $this->age = $age;
+    }
+}
+
+echo add(5, 3);
 echo "<br>";
 
-echo in_array("Banana", $fruits) ? "Yes" : "No";
+echo greet("Ali");
 echo "<br>";
 
-array_push($fruits, "Grapes");
-print_r($fruits);
+var_dump(isAdult(20));
 echo "<br>";
 
-array_pop($fruits);
-print_r($fruits);
+print_r(getNumbers());
 echo "<br>";
 
-sort($fruits);
-print_r($fruits);
+$user = new User("Ali", 20);
+
+echo $user->name;
 echo "<br>";
 
-rsort($fruits);
-print_r($fruits);
-echo "<br>";
+echo $user->age;
 
-$numbers = [10, 20, 30, 40];
-
-echo array_sum($numbers);
-echo "<br>";
-
-echo array_search(30, $numbers);
-echo "<br>";
-
-$newFruits = array_slice($fruits, 1, 2);
-print_r($newFruits);
-echo "<br>";
-
-$moreFruits = ["Peach", "Watermelon"];
-
-$allFruits = array_merge($fruits, $moreFruits);
-print_r($allFruits);
-
-?>
