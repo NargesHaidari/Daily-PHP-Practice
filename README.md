@@ -14,7 +14,7 @@ This repository documents my daily PHP learning journey, including practice exer
 | 2026-08-21 | String Functions in PHP                                |
 | 2026-08-22 | Array Functions in PHP                                 |
 | 2026-08-23 | Scope and Type Declarations                            |
-| 2026-08-24 | GET Method in PHP                                      |
+| 2026-08-24 | GET and POST Method in PHP                             |
 
 ---
 
