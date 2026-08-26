@@ -1,13 +1,12 @@
 
 
-<form method="post">
-    <input type="text" name="username" placeholder="Enter your name">
-    <button type="submit">Send</button>
+<form action="process.php" method="POST">
+
+    <label>Name:</label>
+    <input type="text" name="name">
+
+    <button type="submit">Submit</button>
+
 </form>
 
-<?php
-if (isset($_REQUEST['username'])) {
-    echo "Hello " . $_REQUEST['username'];
-}
-?>
 
