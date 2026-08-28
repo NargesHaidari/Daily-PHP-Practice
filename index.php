@@ -1,12 +1,12 @@
 
 
+
 <form action="process.php" method="POST">
-
-    <label>Name:</label>
-    <input type="text" name="name">
-
+    Name: <input type="text" name="name"><br>
+    Email: <input type="email" name="email"><br>
     <button type="submit">Submit</button>
-
 </form>
+
+
 
 

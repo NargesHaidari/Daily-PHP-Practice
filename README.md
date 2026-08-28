@@ -17,6 +17,7 @@ This repository documents my daily PHP learning journey, including practice exer
 | 2026-08-24 | GET and POST Method in PHP                             |
 | 2026-08-25 | Learn PHP $_REQUEST                                    |
 | 2026-08-26 | Basic Form Validation in PHP                           |
+| 2026-08-28 | Basic Form Sanitization in PHP                         |
 
 ---
 

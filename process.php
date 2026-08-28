@@ -2,12 +2,13 @@
 
 <?php
 
-$name = trim($_POST["name"] ?? "");
+$name = trim($_POST["name"]);
+$email = trim($_POST["email"]);
 
-if (empty($name)) {
-    echo "Please enter your name.";
-} elseif (strlen($name) < 3) {
-    echo "Name must be at least 3 characters.";
-} else {
-    echo "Welcome " . htmlspecialchars($name);
-}
+$name = htmlspecialchars($name, ENT_QUOTES, "UTF-8");
+$email = filter_var($email, FILTER_SANITIZE_EMAIL);
+
+echo "Name: " . $name . "<br>";
+echo "Email: " . $email;
+
+?>
