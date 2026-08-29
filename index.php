@@ -1,12 +1,11 @@
 
 
 
-<form action="process.php" method="POST">
-    Name: <input type="text" name="name"><br>
-    Email: <input type="email" name="email"><br>
-    <button type="submit">Submit</button>
-</form>
+<?php
 
+echo $_SERVER["REQUEST_METHOD"] . "<br>";
+echo $_SERVER["SERVER_NAME"] . "<br>";
+echo $_SERVER["PHP_SELF"] . "<br>";
 
 
 
