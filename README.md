@@ -19,6 +19,7 @@ This repository documents my daily PHP learning journey, including practice exer
 | 2026-08-26 | Basic Form Validation in PHP                           |
 | 2026-08-28 | Basic Form Sanitization in PHP                         |
 | 2026-08-29 | PHP superglobals and $_SERVER                          |
+| 2026-08-30 | PHP $_COOKIE superglobal                               |
 
 ---
 

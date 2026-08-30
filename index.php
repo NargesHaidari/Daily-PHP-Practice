@@ -1,11 +1,13 @@
 
 
-
 <?php
 
-echo $_SERVER["REQUEST_METHOD"] . "<br>";
-echo $_SERVER["SERVER_NAME"] . "<br>";
-echo $_SERVER["PHP_SELF"] . "<br>";
+$name = "Narges";
 
+setcookie("username", $name, time() + 3600);
+
+echo "Cookie created!";
+
+?>
 
 
