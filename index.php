@@ -1,20 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <form action="process.php" method="post">
+        Name: <input type="text" name='name'>
+        <br>
+        Email: <input type="text" name='email'>
+        <br>
+        <button type='submit'>Submit</button>
+    </form>
 
 
-<?php
-session_start();
-
-if (isset($_POST['login'])) {
-    $_SESSION['username'] = $_POST['username'];
-    header("Location: process.php");
-    exit();
-}
-?>
-
-<h2>Login</h2>
-
-<form method="post">
-    <input type="text" name="username" placeholder="Enter username">
-    <button type="submit" name="login">Login</button>
-</form>
+</body>
+</html>
 
 

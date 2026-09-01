@@ -21,6 +21,7 @@ This repository documents my daily PHP learning journey, including practice exer
 | 2026-08-29 | PHP superglobals and $_SERVER                          |
 | 2026-08-30 | PHP $_COOKIE superglobal                               |
 | 2026-08-31 | PHP $_SESSION superglobal                              |
+| 2026-09-01 | Intermediate Form Validation & Security in PHP         |
 
 ---
 
