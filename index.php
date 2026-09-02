@@ -1,23 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
+<?php
 
-    <form action="process.php" method="post">
-        Name: <input type="text" name='name'>
-        <br>
-        Email: <input type="text" name='email'>
-        <br>
-        <button type='submit'>Submit</button>
-    </form>
+if (isset($_FILES['myfile'])) {
+    echo "File name: " . $_FILES['myfile']['name'] . "<br>";
+    echo "File type: " . $_FILES['myfile']['type'] . "<br>";
+    echo "File size: " . $_FILES['myfile']['size'] . " bytes<br>";
+}
 
+?>
 
-</body>
-</html>
+<form method="post" enctype="multipart/form-data">
+    <input type="file" name="myfile">
+    <button type="submit">Upload</button>
+</form>
 
 
