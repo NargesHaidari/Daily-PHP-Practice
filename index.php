@@ -1,16 +1,28 @@
+
+
 <?php
 
-if (isset($_FILES['myfile'])) {
-    echo "File name: " . $_FILES['myfile']['name'] . "<br>";
-    echo "File type: " . $_FILES['myfile']['type'] . "<br>";
-    echo "File size: " . $_FILES['myfile']['size'] . " bytes<br>";
+
+$name = "Narges";
+$age = 17;
+$country = "Pakistan";
+$language = "English";
+
+function showInformation() {
+    echo "Name: " . $GLOBALS['name'] . "<br>";
+    echo "Age: " . $GLOBALS['age'] . "<br>";
+    echo "Country: " . $GLOBALS['country'] . "<br>";
+    echo "Language: " . $GLOBALS['language'] . "<br>";
 }
 
+$_ENV['APP_NAME'] = "My Website";
+$_ENV['APP_VERSION'] = "1.0";
+$_ENV['APP_AUTHOR'] = "Narges";
+
+echo "Application: " . $_ENV['APP_NAME'] . "<br>";
+echo "Version: " . $_ENV['APP_VERSION'] . "<br>";
+echo "Author: " . $_ENV['APP_AUTHOR'] . "<br><br>";
+
+showInformation();
+
 ?>
-
-<form method="post" enctype="multipart/form-data">
-    <input type="file" name="myfile">
-    <button type="submit">Upload</button>
-</form>
-
-
