@@ -1,28 +1,26 @@
 
 
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>PHP File Handling</h2>
+
 <?php
 
+$file = "data.txt";
 
-$name = "Narges";
-$age = 17;
-$country = "Pakistan";
-$language = "English";
+file_put_contents($file, "Hello PHP!");
 
-function showInformation() {
-    echo "Name: " . $GLOBALS['name'] . "<br>";
-    echo "Age: " . $GLOBALS['age'] . "<br>";
-    echo "Country: " . $GLOBALS['country'] . "<br>";
-    echo "Language: " . $GLOBALS['language'] . "<br>";
-}
+echo file_get_contents($file);
 
-$_ENV['APP_NAME'] = "My Website";
-$_ENV['APP_VERSION'] = "1.0";
-$_ENV['APP_AUTHOR'] = "Narges";
+echo "<br>";
 
-echo "Application: " . $_ENV['APP_NAME'] . "<br>";
-echo "Version: " . $_ENV['APP_VERSION'] . "<br>";
-echo "Author: " . $_ENV['APP_AUTHOR'] . "<br><br>";
+file_put_contents($file, "\nI am learning PHP.", FILE_APPEND);
 
-showInformation();
+echo file_get_contents($file);
 
 ?>
+
+</body>
+</html>
