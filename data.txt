@@ -1,2 +1,0 @@
-Hello PHP!
-I am learning PHP.

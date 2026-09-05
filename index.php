@@ -1,26 +1,21 @@
 
-
-<!DOCTYPE html>
-<html>
-<body>
-
-<h2>PHP File Handling</h2>
-
 <?php
 
-$file = "data.txt";
+function divide($a, $b) {
+    if ($b == 0) {
+        throw new Exception("Cannot divide by zero.");
+    }
+    return $a / $b;
+}
 
-file_put_contents($file, "Hello PHP!");
-
-echo file_get_contents($file);
-
-echo "<br>";
-
-file_put_contents($file, "\nI am learning PHP.", FILE_APPEND);
-
-echo file_get_contents($file);
+try {
+    echo divide(10, 0);
+}
+catch (Exception $e) {
+    echo "Error: " . $e->getMessage();
+}
+finally {
+    echo "<br>Process finished.";
+}
 
 ?>
-
-</body>
-</html>
