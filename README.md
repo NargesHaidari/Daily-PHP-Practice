@@ -26,6 +26,7 @@ This repository documents my daily PHP learning journey, including practice exer
 | 2026-09-03 | PHP $_ENV and $GLOBALS superglobal                     |
 | 2026-09-04 | File Handling in PHP                                   |
 | 2026-09-05 | Exception Handling in PHP                              |
+| 2026-09-07 | Include, Require, include_once and require_once in PHP |
 
 ---
 

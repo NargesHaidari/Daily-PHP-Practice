@@ -1,21 +1,18 @@
 
 <?php
 
-function divide($a, $b) {
-    if ($b == 0) {
-        throw new Exception("Cannot divide by zero.");
-    }
-    return $a / $b;
-}
+include "message.php";
 
-try {
-    echo divide(10, 0);
-}
-catch (Exception $e) {
-    echo "Error: " . $e->getMessage();
-}
-finally {
-    echo "<br>Process finished.";
-}
+echo "<br>";
+
+require "message.php";
+
+echo "<br>";
+
+include_once "message.php";
+
+echo "<br>";
+
+require_once "message.php";
 
 ?>
