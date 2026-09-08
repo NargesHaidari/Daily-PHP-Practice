@@ -1,18 +1,44 @@
 
 <?php
 
-include "message.php";
+$username = "Narges";
+$password = "12345";
 
-echo "<br>";
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-require "message.php";
+    if ($_POST["username"] == $username && $_POST["password"] == $password) {
+        header("Location: home.php");
+        exit;
+    }
 
-echo "<br>";
-
-include_once "message.php";
-
-echo "<br>";
-
-require_once "message.php";
+}
 
 ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+</head>
+<body>
+
+<h2>Login</h2>
+
+<form method="POST">
+
+    <label>Username:</label>
+    <input type="text" name="username">
+
+    <br><br>
+
+    <label>Password:</label>
+    <input type="password" name="password">
+
+    <br><br>
+
+    <button type="submit">Login</button>
+
+</form>
+
+</body>
+</html>
