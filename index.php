@@ -1,44 +1,41 @@
-
 <?php
 
-$username = "Narges";
-$password = "12345";
+date_default_timezone_set("Asia/Karachi");
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+echo date("Y-m-d");
+echo "<br>";
 
-    if ($_POST["username"] == $username && $_POST["password"] == $password) {
-        header("Location: home.php");
-        exit;
-    }
+echo date("H:i:s");
+echo "<br>";
 
-}
+echo date("Y-m-d H:i:s");
+echo "<br>";
 
+echo date("l, F d, Y");
+echo "<br>";
+
+$now = time();
+
+echo $now;
+echo "<br>";
+
+echo date("Y-m-d H:i:s", $now);
+echo "<br>";
+
+$tomorrow = strtotime("+1 day");
+echo date("Y-m-d", $tomorrow);
+echo "<br>";
+
+$nextWeek = strtotime("+1 week");
+echo date("Y-m-d", $nextWeek);
+echo "<br>";
+
+$yesterday = strtotime("-1 day");
+echo date("Y-m-d", $yesterday);
+echo "<br>";
+
+$date1 = strtotime("2026-09-10");
+$date2 = strtotime("2026-09-20");
+
+echo ($date2 - $date1) / 86400;
 ?>
-
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Login Page</title>
-</head>
-<body>
-
-<h2>Login</h2>
-
-<form method="POST">
-
-    <label>Username:</label>
-    <input type="text" name="username">
-
-    <br><br>
-
-    <label>Password:</label>
-    <input type="password" name="password">
-
-    <br><br>
-
-    <button type="submit">Login</button>
-
-</form>
-
-</body>
-</html>
