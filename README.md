@@ -29,6 +29,7 @@ This repository documents my daily PHP learning journey, including practice exer
 | 2026-09-07 | Include, Require, include_once and require_once in PHP |
 | 2026-09-08 | Header Function in PHP                                 |
 | 2026-09-10 | Date and Time in PHP                                   |
+| 2026-09-12 | JSON and Anonymous Funciton in PHP                     |
 
 ---
 

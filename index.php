@@ -1,41 +1,28 @@
+
 <?php
 
-date_default_timezone_set("Asia/Karachi");
+// JSON
+$user = [
+    "name" => "Narges",
+    "age" => 17,
+    "country" => "Pakistan"
+];
 
-echo date("Y-m-d");
-echo "<br>";
+$json = json_encode($user);
 
-echo date("H:i:s");
-echo "<br>";
+echo "<h3>JSON:</h3>";
+echo $json;
 
-echo date("Y-m-d H:i:s");
-echo "<br>";
+echo "<br><br>";
 
-echo date("l, F d, Y");
-echo "<br>";
+// Anonymous Function
+$showUser = function($user) {
+    return "Name: " . $user["name"] .
+           "<br>Age: " . $user["age"] .
+           "<br>Country: " . $user["country"];
+};
 
-$now = time();
+echo "<h3>User Information:</h3>";
+echo $showUser($user);
 
-echo $now;
-echo "<br>";
-
-echo date("Y-m-d H:i:s", $now);
-echo "<br>";
-
-$tomorrow = strtotime("+1 day");
-echo date("Y-m-d", $tomorrow);
-echo "<br>";
-
-$nextWeek = strtotime("+1 week");
-echo date("Y-m-d", $nextWeek);
-echo "<br>";
-
-$yesterday = strtotime("-1 day");
-echo date("Y-m-d", $yesterday);
-echo "<br>";
-
-$date1 = strtotime("2026-09-10");
-$date2 = strtotime("2026-09-20");
-
-echo ($date2 - $date1) / 86400;
 ?>
