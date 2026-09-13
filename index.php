@@ -1,28 +1,6 @@
 
-<?php
-
-// JSON
-$user = [
-    "name" => "Narges",
-    "age" => 17,
-    "country" => "Pakistan"
-];
-
-$json = json_encode($user);
-
-echo "<h3>JSON:</h3>";
-echo $json;
-
-echo "<br><br>";
-
-// Anonymous Function
-$showUser = function($user) {
-    return "Name: " . $user["name"] .
-           "<br>Age: " . $user["age"] .
-           "<br>Country: " . $user["country"];
-};
-
-echo "<h3>User Information:</h3>";
-echo $showUser($user);
-
-?>
+<form action="upload.php" method="post" enctype="multipart/form-data">
+    Name: <input type="text" name='name'><br><br>
+    File: <input type="file" name='my_file'><br><br>
+    <button type='submit'>Submit</button>
+</form>
