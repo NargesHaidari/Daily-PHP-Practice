@@ -2,18 +2,18 @@
 <?php
 
 $students = [
-    ["name" => "Narges", "score" => 95],
-    ["name" => "Sara", "score" => 82],
-    ["name" => "Ali", "score" => 70]
+    ["Narges", 17, "PHP"],
+    ["Ali", 19, "JavaScript"],
+    ["Sara", 18, "Python"],
+    ["Ahmad", 20, "Laravel"]
 ];
 
-$getResult = fn($score) => $score >= 60 ? "Passed" : "Failed";
+echo "<h2>Student Information</h2>";
 
-foreach ($students as $student) {
-    echo "Name: " . $student["name"] . "<br>";
-    echo "Score: " . $student["score"] . "<br>";
-    echo "Result: " . $getResult($student["score"]) . "<br>";
+foreach ($students as [$name, $age, $course]) {
+
+    echo "Name: $name <br>";
+    echo "Age: $age <br>";
+    echo "Course: $course <br>";
     echo "<hr>";
 }
-
-?>

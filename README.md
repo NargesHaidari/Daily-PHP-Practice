@@ -33,6 +33,7 @@ This repository documents my daily PHP learning journey, including practice exer
 | 2026-09-13 | PHP File Upload with Validation                        |
 | 2026-09-14 | Clousers in PHP                                        |
 | 2026-09-15 | Arrow Function and Foreach in PHP                      |
+| 2026-09-16 | Array Destructuring in PHP                             |
 
 ---
 
