@@ -1,61 +1,78 @@
-
-
 <?php
 
-class Student
-{
-    public $name;
-    public $age;
-    public $grade;
-    public $favoriteSubject;
-
-    public function introduce()
-    {
-        echo "My name is " . $this->name . "<br>";
-        echo "I am " . $this->age . " years old.<br>";
-        echo "I am in grade " . $this->grade . ".<br>";
-        echo "My favorite subject is " . $this->favoriteSubject . ".<br>";
-    }
-
-    public function study()
-    {
-        echo $this->name . " is studying " . $this->favoriteSubject . ".<br>";
-    }
-
-    public function birthday()
-    {
-        $this->age++;
-        echo $this->name . " is now " . $this->age . " years old.<br>";
-    }
-}
+// 1. abs()
+echo abs(-25);
+echo "<br>";
 
 
-// Object 1
-$student1 = new Student();
-
-$student1->name = "Narges";
-$student1->age = 17;
-$student1->grade = 10;
-$student1->favoriteSubject = "Computer Science";
-
-$student1->introduce();
-$student1->study();
-$student1->birthday();
-
-echo "<hr>";
+// 2. round()
+echo round(12.6);
+echo "<br>";
 
 
-// Object 2
-$student2 = new Student();
+// 3. ceil()
+echo ceil(12.1);
+echo "<br>";
 
-$student2->name = "Sara";
-$student2->age = 16;
-$student2->grade = 10;
-$student2->favoriteSubject = "Mathematics";
 
-$student2->introduce();
-$student2->study();
-$student2->birthday();
+// 4. floor()
+echo floor(12.9);
+echo "<br>";
+
+
+// 5. sqrt()
+echo sqrt(25);
+echo "<br>";
+
+
+// 6. pow()
+echo pow(2, 3);
+echo "<br>";
+
+
+// 7. max()
+echo max(10, 25, 7, 40, 18);
+echo "<br>";
+
+
+// 8. min()
+echo min(10, 25, 7, 40, 18);
+echo "<br>";
+
+
+// 9. rand()
+echo rand(1, 100);
+echo "<br>";
+
+
+// 10. pi()
+echo pi();
+echo "<br>";
+
+
+// 11. number_format()
+$number = 1234567.89;
+echo number_format($number);
+echo "<br>";
+
+
+// 12. fmod()
+echo fmod(10.5, 3);
+echo "<br>";
+
+
+// 13. intdiv()
+echo intdiv(10, 3);
+echo "<br>";
+
+
+// 14. log()
+echo log(10);
+echo "<br>";
+
+
+// 15. exp()
+echo exp(2);
 
 ?>
 
