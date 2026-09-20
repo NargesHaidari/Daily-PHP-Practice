@@ -36,6 +36,7 @@ This repository documents my daily PHP learning journey, including practice exer
 | 2026-09-16 | Array Destructuring in PHP                             |
 | 2026-09-18 | Objects and Classes in PHP                             |
 | 2026-09-19 | Useful Numberic and String Functions                   |
+| 2026-09-20 | PHP OOP: Properties and Methods                        |
 
 ---
 
