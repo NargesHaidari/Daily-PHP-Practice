@@ -1,24 +1,26 @@
 <?php
 
-class Student
-{
-    // Properties
-    public $name;
-    public $age;
+$server = 'localhost';
+$username = 'root';
+$password = '';
+$dbname = 'school';
 
-    // Method
-    public function introduce()
-    {
-        echo "Hello, my name is " . $this->name;
-        echo "<br>";
-        echo "I am " . $this->age . " years old.";
-    }
+$conn = mysqli_connect($server, $username, $password, $dbname);
+
+if(!$conn){
+    die('connection fialed: ' . mysqli_connect_error() . '<br>');
+}else{
+    echo 'connected successfuly' . '<br>';
 }
 
-$student1 = new Student();
+$sql = "SELECT * FROM students";
 
-$student1->name = "Narges";
-$student1->age = 17;
+$result = mysqli_query($conn , $sql);
 
-$student1->introduce();
+while($row = mysqli_fetch_assoc($result)){
+    echo $row['name'] . '<br>';
+    echo $row['age'] . '<br>';
+}
 
+
+?>
